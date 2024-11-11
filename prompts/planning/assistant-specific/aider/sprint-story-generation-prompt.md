@@ -54,7 +54,7 @@ Example analysis output:
 Technical Dependency Analysis:
 1. Entry Creation Form (Priority 1)
    - No dependencies, ready for implementation
-   - Relevant tech: Vue.js, Vuetify, VeeValidate
+   - Relevant tech: Vue.js, Vuetify
 2. Local Storage Setup (Priority 1)
    - No dependencies, ready for implementation
    - Relevant tech: Pinia for state management
@@ -81,16 +81,19 @@ Story S2.1: Set up Local Storage
 As a developer, I want to implement local storage functionality so that journal entries can be persisted between sessions.
 
 Acceptance Criteria:
-- Local storage service is implemented
-- Basic CRUD operations are tested
-- Error handling is in place
+- Local storage service is implemented for data persistence
+- Create operations store entries correctly
+- Read operations retrieve stored entries accurately
+- Update operations modify existing entries properly
+- Delete operations remove entries as expected
+- Error states are handled gracefully
 
 Dependencies: None
 
 Developer Notes:
 - Consider using Pinia for state management
 - LocalStorage wrapper could be implemented as a Pinia plugin
-- VeeValidate can help with data validation before storage
+- Include proper error handling for storage quota and availability
 
 Technical Rationale: These stories follow the minimal dependency chain needed to establish core data persistence and user input functionality.
 ```
@@ -132,3 +135,10 @@ When "#generate-sprint-stories-status" is seen, respond with:
 ☐ Remaining: [list uncompleted steps]
 
 Use #generate-sprint-stories to continue"
+
+CRITICAL Rules:
+1. Never include any testing-related criteria or references in stories
+2. Keep acceptance criteria focused on functional requirements only
+3. Ensure all criteria are observable behaviors or outcomes
+4. Avoid implementation details in acceptance criteria
+5. Focus on what needs to work, not how to verify it works

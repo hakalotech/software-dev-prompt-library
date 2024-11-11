@@ -49,13 +49,14 @@ Must Support:
 - [specific capability]
 - [specific capability]
 Manual Verification:
-- [how user should test/verify this functionality]
-- [what user should observe when working correctly]
+- [what specific result should be visible/observable]
+- [what specific behavior should occur]
+- [what specific state change should happen]
 Prerequisite: [what functionality must exist first]
 Developer Notes:
 - [Provide general, technology-neutral suggestions]
-- [Avoid references to specific tools or libraries]
-- [Focus on user objectives, not implementation]
+- [Focus on user-facing functionality only]
+- [Note any important behavioral requirements]
 
 Step 2. Enable [functionality]
 [continue with same format for each step]
@@ -64,14 +65,24 @@ Step 2. Enable [functionality]
 Each step MUST:
 - Be atomic (one clear focus)
 - Support specific acceptance criteria
-- Have clear manual verification steps
+- Have clear observable outcomes
 - Include prerequisites if any
 - Focus on WHAT, not HOW in the main step description
 
 Developer Notes MUST:
 - Provide general, technology-neutral suggestions
-- Avoid references to specific tools or libraries
-- Focus on user objectives, not implementation
+- Focus on functionality and behavior only
+- Avoid references to testing, validation, or quality assurance
+- Describe what needs to work, not how to verify it works
+
+Manual Verification MUST:
+- Describe only observable outcomes
+- Focus on user-visible results
+- Specify expected behaviors
+- Describe state changes that should occur
+- Never mention testing, test cases, or test scenarios
+- Never include technical verification steps
+- Never reference debugging or diagnostic procedures
 
 [STEP 5] Present the implementation steps and ask:
 "Please review these implementation steps. Reply with:
@@ -116,7 +127,13 @@ CRITICAL Rules:
 2. Developer notes can provide general, technology-neutral suggestions
 3. Never mention or reference specific technologies, libraries, or implementation details
 4. Stay focused on user-facing behavior in step requirements
-5. Keep steps atomic and testable
+5. Keep steps atomic and focused on observable outcomes
 6. Ensure clear progression between steps
-7. Manual verification steps must describe what user should test and observe
+7. Manual verification steps must describe only observable results and behaviors
 8. NO additional formatting or suggestions beyond the specified template
+9. NEVER include any testing-related criteria or references
+10. NEVER mention unit tests, integration tests, or any form of testing
+11. NEVER include verification steps that would only be useful for testing
+12. Keep all verification focused on end-user observable behaviors
+13. NO references to code validation or quality assurance
+14. NO debugging or diagnostic procedures
