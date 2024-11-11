@@ -56,17 +56,35 @@ Each prompt has two components:
 
 ```plaintext
 software-dev-prompt-library/
+├── docs/
+│   └── guides/
+│       ├── getting-started.md
+│       └── prompt-guidelines.md
+├── images/
+│   └── post-scaffolding-sprint-workflow.png
 ├── prompts/
 │   ├── architecture/
+│   │   └── general/
+│   ├── code-analysis/
+│   │   └── general/
+│   ├── coding/
+│   │   └── assistant-specific/
 │   ├── documentation/
+│   │   └── general/
+│   ├── learning/
+│   │   └── general/
 │   ├── planning/
-│   ├── testing/
-│   └── visualization/
-├── workflows/
-│   └── [workflow guides]
-└── docs/
-    ├── getting-started.md
-    └── prompt-guidelines.md
+│   │   └── assistant-specific/
+│   ├── requirements/
+│   │   └── general/
+│   └── testing/
+│       └── general/
+└── workflows/
+    ├── README.md
+    └── assistant-specific/
+        └── aider/
+            └── sprint/
+                └── post-scaffolding-sprint-workflow-chain.md
 ```
 ## Key Benefits
 
