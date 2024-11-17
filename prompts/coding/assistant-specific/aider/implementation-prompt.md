@@ -73,6 +73,12 @@ Present the plan and ask EXACTLY:
 - 'approved' to proceed with implementation
 - specific changes you'd like to see"
 
+If changes are requested:
+1. I will update the implementation plan based on your feedback
+2. Present the updated plan
+3. Return to the start of Step 3 for your review"
+[STOP - Wait for user review. Loop through Step 3 until approved]
+
 [STEP 4] After receiving 'approved', say EXACTLY:
 "Ready to implement the approved plan. To proceed:
 1. Enter command: /chat-mode code
